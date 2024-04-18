@@ -1,0 +1,51 @@
+body {
+    margin:0;
+    background: #7EA1FF;
+}
+
+#app {
+    display: grid;
+    /* display notes automatically at 180px width  
+    if the pages is too small, notes will drop down*/
+    grid-template-columns: repeat(auto-fill,180px);
+    padding: 22px;
+    gap: 22px;
+}
+
+.note {
+    /*exact same value as the width
+    to give a perfectly squared note  */
+    height: 180px; 
+    box-sizing: border-box;
+    padding: 16px ;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.20 );
+    /* to remove default resizable box */
+    resize: none;
+    
+    
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+ 
+    font-size: 16px
+      
+}
+
+.add-note {
+    height: 180px;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.15 );
+    border-radius: 12px;
+    font-size: 75px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add-note:hover {
+    background: rgba(0, 0, 0, 0.25 );
+}
