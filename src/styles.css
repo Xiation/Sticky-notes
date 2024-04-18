@@ -3,6 +3,25 @@ body {
     background: #7EA1FF;
 }
 
+.nav-bar {
+    display: flex;
+    background-color: blue;
+}
+
+.logo {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+ 
+    font-size: 24px;
+
+    display: flex;
+    flex-direction: column;
+    color: antiquewhite;
+    padding-left: 150px;
+}
+
 #app {
     display: grid;
     /* display notes automatically at 180px width  
